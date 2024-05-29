@@ -18,22 +18,9 @@ This project implements a system for displaying products and providing recommend
    ```
 3. Install dependencies:
    ```
-   npm install
+   composer install
    ```
-4. Configure the environment variables as needed.
 
-## Running the System
-To start the server, run the following command:
-```
-npm start
-```
-
-## Testing
-1. Load Testing: Use tools like Apache JMeter or k6 to simulate peak traffic and evaluate system performance.
-2. Unit Testing: Run unit tests to ensure the functionality of each API endpoint.
-   ```
-   npm test
-   ```
 
 ## API Documentation
 ### 1. Get Products (`/products`)
