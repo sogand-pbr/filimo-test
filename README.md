@@ -102,41 +102,6 @@ Response:
 }
 ```
 
-### 3. Get Recommendations for a Product (`/products/:id/recommendations`)
-#### Description
-Retrieves a list of recommended products related to the specified product.
-#### Method
-GET
-#### Parameters
-- `id` (integer): Unique identifier of the product.
-#### Response
-- **200 OK**: Returns a JSON array of recommended products.
-- **404 Not Found**: If no recommendations are found.
-
-#### Example
-Request:
-```
-GET /products/1/recommendations
-```
-Response:
-```json
-[
-  {
-    "id": 2,
-    "name": "Product B",
-    "price": 10.49,
-    "category": "Clothing",
-    "inventory": 50
-  },
-  {
-    "id": 3,
-    "name": "Product C",
-    "price": 15.99,
-    "category": "Electronics",
-    "inventory": 30
-  }
-]
-```
 
 ## Requests per second
 
