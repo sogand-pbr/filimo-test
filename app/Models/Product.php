@@ -33,7 +33,7 @@ class Product extends Model
 
     public function getRelatedProductsAttribute()
     {
-        return Product::where('category_id' , $this->attributes['category_id'])->take(10)->get();
+        return Product::whereNot('id' , $this->attributes['id'])->where('category_id' , $this->attributes['category_id'])->take(10)->get();
     }
 
 
