@@ -31,4 +31,10 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function getRelatedProductsAttribute()
+    {
+        return Product::where('category_id' , $this->attributes['category_id'])->take(10)->get();
+    }
+
+
 }

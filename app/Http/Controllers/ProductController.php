@@ -43,7 +43,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return $product->load(['category']);
+        return $product->load(['category'])->append('related_products');
     }
 
 
