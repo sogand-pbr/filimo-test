@@ -41,10 +41,12 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Product $product)
     {
-
+        return $product->load(['category']);
     }
+
+
 
     /**
      * Update the specified resource in storage.
